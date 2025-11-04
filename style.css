@@ -1,10 +1,10 @@
 :root {
   /* Global color variables */
   --color-background: #0f0f0f;
-  --color-header-text: #6f6f6f;
+  --color-header-text: #8E9C78;
   --color-body-text: #cecece;
   --color-card-background: #ffffff;
-  --color-card-text: #8E9C78;
+  --color-card-text: #6f6f6f;
 }
 * {
   box-sizing: border-box;
