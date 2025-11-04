@@ -9,7 +9,7 @@ body {
 
 /* center the header content and keep it in a nice column */
 header {
-  max-width: 800px;      /* controls line length */
+  max-width: 840px;      /* controls line length */
   margin: 3rem auto;     /* auto left/right centers it */
   text-align: center;    /* centers the text + inline elements */
   padding: 0 1.5rem;     /* small side padding on mobile */
@@ -24,6 +24,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
