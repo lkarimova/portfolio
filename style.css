@@ -9,7 +9,7 @@ body {
 
 /* center the header content and keep it in a nice column */
 header {
-  max-width: 800px;      /* controls line length */
+  max-width: 960px;      /* controls line length */
   margin: 3rem auto;     /* auto left/right centers it */
   text-align: center;    /* centers the text + inline elements */
   padding: 0 1.5rem;     /* small side padding on mobile */
@@ -20,7 +20,7 @@ header h1 {
 }
 
 p {
-  line-height: 2;
+  line-height: 1.8;
 }
 
 .hero-title {
