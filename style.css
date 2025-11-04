@@ -15,6 +15,8 @@ body {
   font-family: "Saira", sans-serif;
   font-size: 16px;    /* optional: base size */
   line-height: 1.8;   /* optional: nicer readability */
+  background-color: var(--color-background);
+  color: var(--color-body-text);
 }
 
 /* center the header content and keep it in a nice column */
@@ -23,10 +25,6 @@ header {
   margin: 3rem auto;     /* auto left/right centers it */
   text-align: center;    /* centers the text + inline elements */
   padding: 0 1.5rem;     /* small side padding on mobile */
-}
-
-header h1 {
-  margin-bottom: 0.25rem;
 }
 
 p {
@@ -42,6 +40,7 @@ p {
   font-family: "Saira", sans-serif;
   font-size: 3rem; /* change this number to make it bigger/smaller */
   font-weight: 700;  /* boldness — try 400 for normal, 700 for extra bold */
+  color: var(--color-header-text);
 }
 
 .hero-title .hero-icon {
@@ -51,6 +50,7 @@ p {
   display: block;
  /* add spacing around the image */
   margin: 0 0.75rem; /* left/right spacing; increase value for more */
+  color: var(--color-body-text);
 }
 
 main.grid {
@@ -68,11 +68,13 @@ main.grid {
 }
 
 .card {
-  background: white;
+  background-color: var(--color-card-bg);
+  color: var(--color-card-text);
   border-radius: 0.75rem;
   padding: 0.75rem;
   text-decoration: none;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card img {
@@ -80,6 +82,11 @@ main.grid {
   display: block;
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
