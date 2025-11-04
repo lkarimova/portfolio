@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Projects</h1>
+      <p>Selected work with links to more details.</p>
+    </header>
+
+    <main class="grid">
+      <!-- Project 1 -->
+      <article class="card">
+        <a href="https://example.com/project-1" target="_blank" rel="noopener noreferrer">
+          <img src="images/project1.jpg" alt="Project 1" />
+          <h2>Project 1 Title</h2>
+        </a>
+        <p>1–2 sentence description of what this project is about.</p>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <a href="https://example.com/project-2" target="_blank" rel="noopener noreferrer">
+          <img src="images/project2.jpg" alt="Project 2" />
+          <h2>Project 2 Title</h2>
+        </a>
+        <p>Short description, plus what the link leads to.</p>
+      </article>
+
+      <!-- Duplicate cards as needed -->
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+
+    <script>
+      // Auto-update year in the footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
 
