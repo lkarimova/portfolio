@@ -68,7 +68,7 @@ main.grid {
 }
 
 .card {
-  background-color: var(--color-card-bg);
+  background-color: var(--color-card-background);
   color: var(--color-card-text);
   border-radius: 0.75rem;
   padding: 0.75rem;
