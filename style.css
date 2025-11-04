@@ -28,9 +28,9 @@ header h1 {
 }
 
 .hero-title .hero-icon {
-  height: 1.4em;
+  height: 2em;
   width: auto;
-  border-radius: 999px; /* if it's a portrait, this makes it circular-ish */
+  border-radius: 0px; /* if it's a portrait, this makes it circular-ish */
   display: block;
 }
 
