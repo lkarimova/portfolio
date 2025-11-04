@@ -111,6 +111,6 @@ main.grid {
 footer {
   font-size: 0.8rem;
   text-align: center;
-  color: #555;
+  background-color: var(--color-background);
 }
 
