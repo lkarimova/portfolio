@@ -20,6 +20,20 @@ header h1 {
   margin-bottom: 0.25rem;
 }
 
+.hero-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-title .hero-icon {
+  height: 1.4em;
+  width: auto;
+  border-radius: 999px; /* if it's a portrait, this makes it circular-ish */
+  display: block;
+}
+
 main.grid {
   max-width: 960px;
   margin: 0 auto;
