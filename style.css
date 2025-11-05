@@ -80,13 +80,13 @@ p {
 .header-button {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  border: 1px solid var(--button-border);
+  border: 1.5px solid var(--button-border);  /* 1.5px + your color */
   font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: none;
-  color: var(--button-border);
+  background-color: transparent;             /* not 'none' */
+  color: var(--button-border);               /* text matches border */
   transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
 }
 
@@ -100,7 +100,6 @@ p {
   transform: translateY(0);
   box-shadow: none;
 }
-
 
 main.grid {
   max-width: 960px;
