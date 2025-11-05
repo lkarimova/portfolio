@@ -53,6 +53,54 @@ p {
   color: var(--color-body-text);
 }
 
+.header-cta {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;         /* so it stacks nicely on small screens */
+}
+
+/* Input field */
+.header-input {
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #cccccc;
+  min-width: 220px;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: var(--color-body-text);
+}
+
+/* Button */
+.header-button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--color-card-text);   /* nice accent from your palette */
+  color: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.header-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+}
+
+.header-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
 main.grid {
   max-width: 960px;
   margin: 0 auto;
