@@ -85,8 +85,8 @@ p {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: var(--color-card-text);   /* nice accent from your palette */
-  color: #ffffff;
+  background-color: none;
+  color: var(--button-border);
   transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
 }
 
