@@ -5,7 +5,7 @@
   --color-body-text: #cecece;
   --color-card-background: #ffffff;
   --color-card-text: #6f6f6f;
-  --button-borderr: #dfecc6;
+  --button-border: #dfecc6;
 }
 * {
   box-sizing: border-box;
