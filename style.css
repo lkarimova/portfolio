@@ -34,7 +34,7 @@ p {
 
 .hero-title {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -42,6 +42,12 @@ p {
   font-size: 2.5rem; /* change this number to make it bigger/smaller */
   font-weight: 600;  /* boldness — try 400 for normal, 700 for extra bold */
   color: var(--color-header-text);
+}
+
+.hero-line2 {
+  display: flex;            /* put image + (Liza) on one row */
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .hero-title .hero-icon {
