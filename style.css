@@ -39,8 +39,8 @@ p {
   justify-content: center;
   gap: 0.5rem;
   font-family: "Saira", sans-serif;
-  font-size: 3rem; /* change this number to make it bigger/smaller */
-  font-weight: 700;  /* boldness — try 400 for normal, 700 for extra bold */
+  font-size: 2.5rem; /* change this number to make it bigger/smaller */
+  font-weight: 600;  /* boldness — try 400 for normal, 700 for extra bold */
   color: var(--color-header-text);
 }
 
