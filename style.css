@@ -22,7 +22,7 @@ body {
 
 /* center the header content and keep it in a nice column */
 header {
-  max-width: 960px;      /* controls line length */
+  max-width: 1200px;      /* controls line length */
   margin: 3rem auto;     /* auto left/right centers it */
   text-align: center;    /* centers the text + inline elements */
   padding: 0 1.5rem;     /* small side padding on mobile */
@@ -102,7 +102,7 @@ p {
 }
 
 main.grid {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem;
   display: grid;
@@ -111,18 +111,18 @@ main.grid {
 
 @media (min-width: 700px) {
   main.grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 .card {
-  background-color: var(--color-card-background);
+  background-color: transparent;
   color: var(--color-card-text);
-  border-radius: 0.75rem;
-  padding: 0.75rem;
+  border-radius: 0;
+  padding: 0;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: none;
+  pointer-events: none;
 }
 
 .card img {
@@ -134,16 +134,17 @@ main.grid {
 
 .card model-viewer {
   width: 100%;
-  height: 250px;
+  height: 500px;
   display: block;
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
   background-color: transparent;
+  pointer-events: auto;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: none;
+  box-shadow: none;
 }
 
 .card h2 {
@@ -159,10 +160,17 @@ main.grid {
 .card a {
   color: inherit;
   text-decoration: none;
+  display: block;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .card a:hover h2 {
   text-decoration: underline;
+}
+
+.card p {
+  pointer-events: none;
 }
 
 footer {
